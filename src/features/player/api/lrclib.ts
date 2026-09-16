@@ -57,7 +57,7 @@ export async function fetchLyrics(
   });
   
   const fetchHeaders = {
-    'User-Agent': `Kaset/${CURRENT_VERSION} (https://github.com/alidogangullu/KasetMusic)`,
+    'User-Agent': `Kaset/${CURRENT_VERSION} (https://github.com/alidogangullu/Kaset-Player)`,
     'Lrclib-Client': `Kaset/${CURRENT_VERSION}`,
   };
 

@@ -99,7 +99,7 @@ Because Android TV lacks a convenient keyboard, this app uses a dedicated **pair
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/alidogangullu/AirTuneMusic.git`
+1. Clone the repository: `git clone https://github.com/alidogangullu/Kaset-Player.git`
 2. Install dependencies: `yarn install`
 3. Configure environment: Copy `.env.example` to `.env.local` and add your `APPLE_MUSIC_DEVELOPER_TOKEN`.
 4. Build for Android TV: `yarn android`
