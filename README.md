@@ -113,3 +113,11 @@ For detailed setup, debugging, and architecture documentation, see:
 - [🔐 Apple Music User Auth Flow](docs/APPLE_MUSIC_USER_AUTH.md)
 - [🎵 MusicKit Playback Implementation](docs/MUSICKIT_ANDROID_PLAYBACK.md)
 - [🛜 AirPlay Emulator Bridge](scripts/AIRPLAY_EMULATOR_BRIDGE.md)
+
+---
+
+## 📄 License
+
+Kaset Player is **source-available**, not open source. The code is published under the [PolyForm Shield License 1.0.0](LICENSE): you can read it, build it for yourself, modify it and send pull requests, but you can't use it to offer a product that competes with Kaset Player. That includes publishing a copy or fork on an app store, even for free. By opening a pull request you agree that your contribution is licensed under the same terms.
+
+The app bundles third-party open source software. Their licenses are listed in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt). Regenerate it with `yarn licenses:notices` after changing dependencies.

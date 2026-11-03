@@ -2,6 +2,7 @@
   "name": "kaset",
   "version": "2.0.2",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -10,7 +11,8 @@
     "test": "jest",
     "emulator:tv": "emulator -avd Android_TV_API36",
     "android:tv": "react-native run-android",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "licenses:notices": "(cat docs/licenses/native-notices.txt && yarn --silent licenses generate-disclaimer --production) > THIRD_PARTY_NOTICES.txt"
   },
   "dependencies": {
     "@react-native/new-app-screen": "0.83.0",

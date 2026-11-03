@@ -1,0 +1,360 @@
+================================================================================
+Language: English (United States) (en-US)
+================================================================================
+
+Title:
+Kaset Player for Apple Music
+
+Short Description (77 chars):
+Music player for Android TV — stream library, playlists, lyrics, radio & cast
+
+Full Description:
+Bring Apple Music to the big screen!
+
+Kaset Player is an independent, third-party Apple Music player for Android TV. Sign in with your Apple Music account and enjoy your full library, playlists, lyrics, radio and music videos — on a TV optimized interface built for your remote, with Cast support to stream straight from your phone.
+
+Key Features:
+
+🌟 Personalized Discovery: Quickly find recommendations and global hits via the "Listen Now" and "Browse" sections.
+
+🔎 Search: Find any song, album, artist, or playlist in the Apple Music catalog instantly — right from your TV.
+
+📂 Library Access: Your Apple Music library — songs, albums, and playlists — synced and ready at your fingertips.
+
+🎵 Real-Time Lyrics: Sing along with perfectly synced, beautiful lyrics on the big screen.
+
+🛜 Wireless Cast: Stream audio from your phone directly to the TV via Cast.
+
+📻 Radio: Listen to Apple Music Radio stations and your personal and discovery stations, directly on your TV.
+
+📺 Music Videos: Enjoy high-quality music videos from your library and the Apple Music catalog directly on your TV.
+
+🎨 Dynamic Backgrounds: Stunning visuals that adapt and change color based on the current album art.
+
+📲 Quick Sign-in (TV-Link): Sign in securely in seconds using a QR code—no typing passwords with a remote!
+
+🖥️ TV-Optimized Interface: Navigate effortlessly with a UI designed specifically for Android TV remotes (D-pad).
+
+🗂️ Home Screen Channels: Discover content directly from your Android TV home screen with "Recently Played", "Made for You", and "New Releases" channels.
+
+⏯️ Now Playing Integration: Control your music effortlessly without opening the app, thanks to full support for the Google TV "Now Playing" card/notification.
+
+🌙 Dark Mode Support: A beautiful, eye-friendly dark interface designed for comfortable night-time viewing.
+
+🌐 Multi-Language Support: Use the app in your preferred language with comprehensive localization.
+
+Secure & Direct:
+
+Kaset Player fetches data directly from official servers via authorized SDKs. Your personal data is never stored, and your privacy is our priority.
+
+Kaset Pro:
+
+Upgrade to Kaset Pro to remove listening limits and enjoy an uninterrupted premium experience.
+
+Ready to transform your Android TV into a powerful music hub? Download Kaset Player now!
+
+IMPORTANT DISCLAIMER:
+
+Kaset Player is an independent, third-party Apple Music client for Android TV. It is not an official application from Apple Inc., nor is it affiliated with, sponsored by, or endorsed by Apple Inc. This app utilizes official APIs to provide a specialized viewing and listening experience for your Apple Music subscription on Android TV.
+
+
+================================================================================
+Language: Turkish (Turkey) (tr-TR)
+================================================================================
+
+Title:
+Kaset Player for Apple Music
+
+Short Description (77 chars):
+Android TV için müzik çalar — arşiv, çalma listesi, şarkı sözü, radyo ve cast
+
+Full Description:
+Apple Music deneyimini büyük ekrana taşıyın!
+
+Kaset Player, Android TV için geliştirilmiş bağımsız, üçüncü taraf bir Apple Music oynatıcısıdır. Apple Music hesabınızla giriş yaparak tüm arşivinizin, çalma listelerinizin, senkronize şarkı sözlerinin, radyo istasyonlarının ve müzik kliplerinin keyfini çıkarın — televizyon kumandanız için özel olarak tasarlanmış TV arayüzü ve telefonunuzdan doğrudan aktarım sağlayan Cast desteğiyle.
+
+Öne Çıkan Özellikler:
+
+🌟 Kişiselleştirilmiş Keşif: "Şimdi Dinle" ve "Göz At" bölümleriyle size özel önerileri ve dünyadaki hitleri anında keşfedin.
+
+🔎 Arama: Apple Music kataloğundaki tüm parça, albüm, sanatçı veya çalma listelerine doğrudan televizyonunuzdan anında ulaşın.
+
+📂 Arşiv Erişimi: Şarkılar, albümler ve çalma listelerinden oluşan tüm Apple Music arşiviniz senkronize şekilde elinizin altında.
+
+🎵 Gerçek Zamanlı Şarkı Sözleri: Büyük ekranda mükemmel senkronize, büyüleyici şarkı sözleriyle müziğe eşlik edin.
+
+🛜 Kablosuz Cast: Telefonunuzdan doğrudan televizyona Cast üzerinden kesintisiz ses yayını yapın.
+
+📻 Radyo: Apple Music Radio istasyonlarını, kişisel istasyonlarınızı ve keşif radyolarını doğrudan TV'nizde dinleyin.
+
+📺 Müzik Klipleri: Arşivinizdeki ve Apple Music kataloğundaki yüksek kaliteli müzik videolarını büyük ekranda izleyin.
+
+🎨 Dinamik Arka Planlar: Çalan albüm kapağının renklerine göre uyum sağlayan ve canlı değişen büyüleyici görsel efektler.
+
+📲 Hızlı Giriş (TV-Link): QR kod kullanarak saniyeler içinde güvenle giriş yapın — kumandayla şifre yazma derdine son!
+
+🖥️ TV'ye Özel Arayüz: Android TV kumandalarıyla (D-pad yön tuşları) zahmetsizce ve akıcı şekilde gezinmeniz için tasarlandı.
+
+🗂️ Ana Ekran Kanalları: "Son Çalınanlar", "Sizin İçin Hazırlananlar" ve "Yeni Çıkanlar" kanallarıyla Android TV ana ekranınızdan içeriğe anında ulaşın.
+
+⏯️ "Şu An Çalınıyor" Entegrasyonu: Google TV kart ve bildirim desteği sayesinde uygulamayı açmaya gerek kalmadan müziğinizi kolayca kontrol edin.
+
+🌙 Gece Modu: Gece izlemelerinde gözü yormayan şık ve modern koyu tema.
+
+🌐 Çoklu Dil Desteği: Kapsamlı dil desteğiyle uygulamayı kendi ana dilinizde kullanın.
+
+Güvenli ve Doğrudan:
+
+Kaset Player, verileri resmi API ve yetkili SDK'lar aracılığıyla doğrudan resmi sunuculardan çeker. Kişisel verileriniz asla kaydedilmez; gizliliğiniz ve güvenliğiniz önceliğimizdir.
+
+Kaset Pro:
+
+Dinleme sınırlarını kaldırmak ve kesintisiz premium bir müzik deneyimi yaşamak için Kaset Pro'ya geçin.
+
+Android TV'nizi güçlü bir müzik merkezine dönüştürmeye hazır mısınız? Kaset Player'ı hemen indirin!
+
+ÖNEMLİ BİLGİLENDİRME:
+
+Kaset Player, Android TV için bağımsız, üçüncü taraf bir Apple Music istemcisidir. Apple Inc.'in resmi bir uygulaması değildir; Apple Inc. ile herhangi bir bağlılığı, sponsorluğu veya resmi onayı bulunmamaktadır. Bu uygulama, Android TV üzerinde Apple Music aboneliğiniz için optimize edilmiş bir görüntüleme ve dinleme deneyimi sunmak amacıyla resmi API'leri kullanır.
+
+
+================================================================================
+Language: German (Germany) (de-DE)
+================================================================================
+
+Title:
+Kaset Player for Apple Music
+
+Short Description (74 chars):
+Musikplayer für Android TV – Mediathek, Playlists, Songtexte, Radio & Cast
+
+Full Description:
+Bringen Sie Apple Music auf den großen Bildschirm!
+
+Kaset Player ist ein unabhängiger Apple Music Player von Drittanbietern für Android TV. Melden Sie sich mit Ihrem Apple Music-Konto an und genießen Sie Ihre gesamte Mediathek, Playlists, Songtexte, Radio und Musikvideos – auf einer für Ihre Fernbedienung optimierten TV-Oberfläche, inklusive Cast-Unterstützung für direktes Streaming von Ihrem Smartphone.
+
+Hauptmerkmale:
+
+🌟 Personalisierte Entdeckungen: Finden Sie über die Bereiche „Jetzt hören“ und „Entdecken“ schnell Empfehlungen und weltweite Hits.
+
+🔎 Suche: Durchsuchen Sie den gesamten Apple Music-Katalog blitzschnell nach Songs, Alben, Interpreten oder Playlists – direkt auf Ihrem Fernseher.
+
+📂 Zugriff auf die Mediathek: Ihre Apple Music-Mediathek – Songs, Alben und Playlists – synchronisiert und jederzeit griffbereit.
+
+🎵 Songtexte in Echtzeit: Singen Sie mit perfekt synchronisierten, wunderschönen Songtexten auf dem großen Bildschirm mit.
+
+🛜 Kabelloses Casten: Streamen Sie Audioinhalte von Ihrem Smartphone via Cast direkt auf den Fernseher.
+
+📻 Radio: Hören Sie Apple Music-Radiosender sowie Ihre persönlichen Entdeckungssender direkt auf Ihrem Fernseher.
+
+📺 Musikvideos: Erleben Sie hochwertige Musikvideos aus Ihrer Mediathek und dem Apple Music-Katalog direkt auf Ihrem Fernseher.
+
+🎨 Dynamische Hintergründe: Faszinierende visuelle Effekte, die sich dynamisch an die Farben des aktuellen Album-Artworks anpassen.
+
+📲 Schnelle Anmeldung (TV-Link): Sichere Anmeldung in Sekundenschnelle per QR-Code – kein mühsames Tippen von Passwörtern mit der Fernbedienung!
+
+🖥️ Für TV optimierte Benutzeroberfläche: Mühelose Navigation mit einer UI, die speziell für Android TV-Fernbedienungen (Steuerkreuz) entwickelt wurde.
+
+🗂️ Startbildschirm-Kanäle: Entdecken Sie Inhalte direkt auf Ihrem Android TV-Startbildschirm mit den Kanälen „Zuletzt wiedergegeben“, „Für dich“ und „Neuerscheinungen“.
+
+⏯️ „Aktuelle Wiedergabe“-Integration: Steuern Sie Ihre Musik bequem, ohne die App öffnen zu müssen, dank vollständiger Unterstützung der Google TV-Wiedergabekarte.
+
+🌙 Dunkelmodus-Unterstützung: Eine ansprechende, augenschonende dunkle Benutzeroberfläche für komfortables Fernsehen am Abend.
+
+🌐 Mehrsprachige Unterstützung: Nutzen Sie die App dank umfassender Lokalisierung in Ihrer bevorzugten Sprache.
+
+Sicher & Direkt:
+
+Kaset Player ruft Daten über autorisierte SDKs direkt von offiziellen Servern ab. Ihre persönlichen Daten werden niemals gespeichert – Ihre Privatsphäre hat oberste Priorität.
+
+Kaset Pro:
+
+Wechseln Sie zu Kaset Pro, um Wiedergabebeschränkungen aufzuheben und ein unterbrechungsfreies Premium-Erlebnis zu genießen.
+
+Bereit, Ihren Android TV in eine leistungsstarke Musikzentrale zu verwandeln? Laden Sie Kaset Player jetzt herunter!
+
+WICHTIGER HINWEIS:
+
+Kaset Player ist ein unabhängiger Drittanbieter-Client für Apple Music auf Android TV. Es handelt sich nicht um eine offizielle Anwendung von Apple Inc. und die App steht in keiner Verbindung zu Apple Inc., wird nicht von Apple gesponsert oder unterstützt. Diese Anwendung nutzt offizielle APIs, um ein maßgeschneidertes Anzeige- und Hörerlebnis für Ihr Apple Music-Abonnement auf Android TV bereitzustellen.
+
+
+================================================================================
+Language: Spanish (Latin America) (es-419)
+================================================================================
+
+Title:
+Kaset Player for Apple Music
+
+Short Description (72 chars):
+Reproductor para Android TV: biblioteca, playlists, letras, radio y cast
+
+Full Description:
+¡Lleva Apple Music a la pantalla grande!
+
+Kaset Player es un reproductor de Apple Music independiente y de terceros para Android TV. Inicia sesión con tu cuenta de Apple Music y disfruta de toda tu biblioteca, listas de reproducción, letras de canciones, radio y videos musicales en una interfaz optimizada para tu control remoto, con compatibilidad con Cast para transmitir directamente desde tu teléfono.
+
+Características principales:
+
+🌟 Descubrimiento personalizado: Encuentra rápidamente recomendaciones y éxitos globales a través de las secciones "Escuchar" y "Explorar".
+
+🔎 Búsqueda: Encuentra cualquier canción, álbum, artista o playlist en el catálogo de Apple Music al instante, directamente desde tu TV.
+
+📂 Acceso a tu biblioteca: Toda tu biblioteca de Apple Music (canciones, álbumes y playlists) sincronizada y al alcance de tu mano.
+
+🎵 Letras en tiempo real: Canta tus canciones favoritas con letras perfectamente sincronizadas en pantalla grande.
+
+🛜 Cast inalámbrico: Transmite audio desde tu teléfono directamente al televisor mediante Cast.
+
+📻 Radio: Escucha las estaciones de Apple Music Radio y tus emisoras personalizadas y de descubrimiento directamente en la TV.
+
+📺 Videos musicales: Disfruta de videos musicales en alta calidad desde tu biblioteca y el catálogo de Apple Music en tu TV.
+
+🎨 Fondos dinámicos: Atractivos efectos visuales que se adaptan y cambian de color según la portada del álbum en reproducción.
+
+📲 Inicio de sesión rápido (TV-Link): Inicia sesión de forma segura en segundos mediante un código QR, ¡sin necesidad de escribir contraseñas con el control remoto!
+
+🖥️ Interfaz optimizada para TV: Navega cómodamente con una interfaz diseñada específicamente para controles remotos de Android TV (D-pad).
+
+🗂️ Canales en pantalla de inicio: Descubre música directamente desde la pantalla de inicio de Android TV con canales como "Reproducido recientemente", "Para ti" y "Nuevos lanzamientos".
+
+⏯️ Integración con "Reproduciendo ahora": Controla tu música fácilmente sin abrir la app gracias a la compatibilidad con la tarjeta de reproducción de Google TV.
+
+🌙 Modo oscuro: Una interfaz oscura elegante y cómoda para la vista, ideal para disfrutar por la noche.
+
+🌐 Soporte multilingüe: Utiliza la aplicación en tu idioma preferido gracias a su completa traducción.
+
+Seguro y directo:
+
+Kaset Player obtiene datos directamente de los servidores oficiales mediante SDKs autorizados. Tus datos personales nunca se almacenan y tu privacidad es nuestra máxima prioridad.
+
+Kaset Pro:
+
+Pásate a Kaset Pro para eliminar límites de reproducción y disfrutar de una experiencia premium ininterrumpida.
+
+¿Listo para convertir tu Android TV en un potente centro musical? ¡Descarga Kaset Player ahora!
+
+AVISO IMPORTANTE:
+
+Kaset Player es un cliente independiente de terceros de Apple Music para Android TV. No es una aplicación oficial de Apple Inc., ni está afiliada, patrocinada ni respaldada por Apple Inc. Esta app utiliza APIs oficiales para brindar una experiencia especializada de visualización y reproducción para tu suscripción de Apple Music en Android TV.
+
+
+================================================================================
+Language: French (France) (fr-FR)
+================================================================================
+
+Title:
+Kaset Player for Apple Music
+
+Short Description (73 chars):
+Lecteur pour Android TV : bibliothèque, playlists, paroles, radio et cast
+
+Full Description:
+Profitez d'Apple Music sur grand écran !
+
+Kaset Player est un lecteur Apple Music tiers et indépendant pour Android TV. Connectez-vous avec votre compte Apple Music et profitez de l'intégralité de votre bibliothèque, de vos playlists, des paroles, de la radio et des clips musicaux sur une interface optimisée pour votre télécommande TV, avec prise en charge de Cast pour diffuser directement depuis votre téléphone.
+
+Fonctionnalités principales :
+
+🌟 Découverte personnalisée : Trouvez rapidement des recommandations et des succès mondiaux via les sections « Écouter » et « Explorer ».
+
+🔎 Recherche : Trouvez instantanément n'importe quel morceau, album, artiste ou playlist dans le catalogue Apple Music directement depuis votre téléviseur.
+
+📂 Accès à la bibliothèque : Votre bibliothèque Apple Music (morceaux, albums, playlists) synchronisée et accessible en un clic.
+
+🎵 Paroles en temps réel : Chantez en rythme grâce aux superbes paroles synchronisées sur grand écran.
+
+🛜 Diffusion sans fil (Cast) : Diffusez la musique depuis votre téléphone directement vers votre téléviseur via Cast.
+
+📻 Radio : Écoutez les stations Apple Music Radio ainsi que vos stations personnalisées et de découverte directement sur votre téléviseur.
+
+📺 Clips musicaux : Regardez des vidéos musicales en haute définition depuis votre bibliothèque et le catalogue Apple Music.
+
+🎨 Arrière-plans dynamiques : Des visuels saisissants qui s'adaptent et s'animent aux couleurs de la pochette d'album en cours de lecture.
+
+📲 Connexion rapide (TV-Link) : Connectez-vous en quelques secondes en scannant un code QR, sans saisir de mot de passe avec la télécommande !
+
+🖥️ Interface optimisée pour la télévision : Naviguez en toute fluidité grâce à une interface conçue spécialement pour les télécommandes Android TV (croix directionnelle).
+
+🗂️ Chaînes de l'écran d'accueil : Découvrez du contenu directement depuis l'écran d'accueil Android TV avec les chaînes « Récemment écoutés », « Créé pour vous » et « Nouveautés ».
+
+⏯️ Intégration « En cours de lecture » : Contrôlez votre musique sans ouvrir l'application grâce à l'intégration complète aux notifications et fiches Google TV.
+
+🌙 Mode sombre : Une interface sombre élégante et reposante pour les yeux, idéale pour une écoute en soirée.
+
+🌐 Support multilingue : Utilisez l'application dans votre langue grâce à une localisation soignée.
+
+Sécurisé et direct :
+
+Kaset Player communique directement avec les serveurs officiels via des SDK autorisés. Vos données personnelles ne sont jamais stockées et le respect de votre vie privée est notre priorité.
+
+Kaset Pro :
+
+Passez à Kaset Pro pour supprimer les limites d'écoute et profiter d'une expérience musicale premium ininterrompue.
+
+Prêt à faire de votre Android TV un véritable centre musical ? Téléchargez Kaset Player dès maintenant !
+
+AVERTISSEMENT IMPORTANT :
+
+Kaset Player est un client tiers indépendant pour Apple Music sur Android TV. Il ne s'agit pas d'une application officielle d'Apple Inc., et l'application n'est ni affiliée, ni sponsorisée, ni approuvée par Apple Inc. Cette application utilise des API officielles pour offrir une expérience de lecture et d'écoute optimisée pour votre abonnement Apple Music sur Android TV.
+
+
+================================================================================
+Language: Japanese (Japan) (ja-JP)
+================================================================================
+
+Title:
+Kaset Player for Apple Music
+
+Short Description (45 chars):
+Android TV用音楽プレーヤー：ライブラリ、プレイリスト、歌詞、ラジオ、Cast対応
+
+Full Description:
+Apple Musicを大画面テレビで楽しもう！
+
+Kaset Playerは、Android TV向けに設計された独立系サードパーティ製Apple Musicプレーヤーです。お使いのApple Musicアカウントでサインインするだけで、ライブラリ、プレイリスト、歌詞、ラジオ、ミュージックビデオのすべてを、リモコン操作に最適化されたTV専用インターフェースでお楽しみいただけます。さらにスマホからのストリーミングに対応したCast機能も搭載しています。
+
+主な機能：
+
+🌟 パーソナライズされた発見：「今すぐ聴く」や「見つける」セクションから、おすすめの楽曲や世界中のヒット曲をすばやく見つけられます。
+
+🔎 検索：Apple Musicカタログ内のあらゆる楽曲、アルバム、アーティスト、プレイリストをテレビから瞬時に検索可能。
+
+📂 ライブラリへのアクセス：楽曲、アルバム、プレイリストなど、同期されたすべてのライブラリが手元ですぐに利用できます。
+
+🎵 リアルタイム歌詞表示：大画面に美しく同期表示される歌詞に合わせて一緒に歌えます。
+
+🛜 ワイヤレスCast：スマートフォンからCastを使ってテレビへ直接高音質オーディオをストリーミング。
+
+📻 ラジオ機能：Apple Music Radioステーションや個人用ステーション、ディスカバリーステーションをテレビで直接聴けます。
+
+📺 ミュージックビデオ：ライブラリやお気に入りのApple Musicビデオを高画質でテレビで再生。
+
+🎨 ダイナミック背景：再生中のアルバムアートワークの色に合わせてリアルタイムに変化する美しい背景ビジュアル。
+
+📲 かんたんQRサインイン（TV-Link）：QRコードを読み取るだけで数秒で安全にログイン完了。リモコンでパスワードを入力する必要はありません！
+
+🖥️ テレビ向け最適化UI：Android TVリモコン（十字キー）で快適かつ直感的に操作できる専用デザイン。
+
+🗂️ ホーム画面チャンネル：「最近再生した項目」「おすすめ」「新着リリース」などのチャンネルから、Android TVのホーム画面で直接コンテンツを見つけられます。
+
+⏯️ 「再生中」カード連携：Google TVの「再生中」通知カードに対応し、アプリを開くことなく音楽を手軽にコントロール。
+
+🌙 ダークモード対応：夜間の視聴でも目に優しい、美しく洗練されたダークテーマ。
+
+🌐 多言語サポート：細部までローカライズされており、お好みの言語で快適にご利用いただけます。
+
+安心・安全な直接通信：
+
+Kaset Playerは、公式APIおよび認定SDKを通じて公式サーバーから直接データを取得します。個人情報が収集・保存されることは一切なく、プライバシー保護を最優先としています。
+
+Kaset Pro：
+
+Kaset Proにアップグレードすると、再生制限が解除され、途切れることのないプレミアムな音楽体験をお楽しみいただけます。
+
+Android TVを極上のミュージックステーションに変えてみませんか？今すぐKaset Playerをダウンロードしましょう！
+
+重要なお知らせ・免責事項：
+
+Kaset Playerは、Android TV向けのサードパーティ製Apple Musicクライアントアプリです。Apple Inc.の公式アプリケーションではなく、Apple Inc.との提携、スポサーシップ、または推奨関係はありません。本アプリは公式APIを使用し、Android TV上でApple Musicサブスクリプションを快適に楽しむための専用機能を提供します。
+
+
