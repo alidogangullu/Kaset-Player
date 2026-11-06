@@ -279,7 +279,7 @@
     "notificationTitle": "利用制限に達しました",
     "notificationMessage": "引き続き聴くにはKaset Proにアップグレードしてください。",
     "betaTitle": "ご協力をお願いします",
-    "betaBody": "Kaset Player は新しいアプリに移行します。ベータ版にご参加ください！Pro をお持ちの方は、このアプリを同じ機能と Pro アカウントで引き続きご利用いただけます。Pro をお持ちでない方は、ベータ期間中、新しいアプリをより高い上限でご利用いただけます。QR コードを読み取って参加してください。"
+    "betaBody": "Google Play から削除された Kaset Player が、再びストアに戻ってきます。ベータ版にご参加ください！Pro をお持ちの方は、このアプリを同じ機能と Pro アカウントで引き続きご利用いただけます。Pro をお持ちでない方は、ベータ期間中、Google Play 版をより高い上限でご利用いただけます。QR コードを読み取って参加してください。"
   },
   "airplay": {
     "warningTitle": "AirPlayレシーバーを有効にする",
