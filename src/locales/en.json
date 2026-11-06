@@ -9,7 +9,7 @@
     "ok": "OK",
     "unknown": "Unknown",
     "noItems": "No items",
-    "appName": "Kaset for Apple Music",
+    "appName": "Kaset Player",
     "availableNow": "Available now",
     "durationHm": "{{hours}}h {{minutes}}m",
     "durationH": "{{hours}}h",
@@ -28,8 +28,8 @@
     "close": "Close"
   },
   "topBar": {
-    "listenNow": "Listen Now",
-    "browse": "Browse",
+    "listenNow": "Home",
+    "browse": "Explore",
     "videos": "Videos",
     "radio": "Radio",
     "library": "Library",
@@ -182,7 +182,7 @@
       "resetsIn": "⏱ Resets in: {{remaining}}",
       "featureMusic": "∞ Unlimited music playback",
       "featureAirPlay": "∞ Unlimited AirPlay streaming",
-      "featuresTitle": "Get Kaset for Apple Music Pro",
+      "featuresTitle": "Get Kaset Player Pro",
       "disclaimer": "Kaset is an independent Apple Music client, not an official Apple app. Upgrading to Pro removes Kaset's playback and streaming limits and supports development. This purchase is separate from your Apple Music subscription.",
       "currentPlan": "Current Plan",
       "cancelTitle": "Cancel Your Subscription",
@@ -202,8 +202,8 @@
     "update": "Update Available",
     "support": "Support",
     "aboutInfo": {
-      "title": "About Kaset for Apple Music",
-      "message": "Kaset for Apple Music is a third-party Apple Music client built exclusively using the official Apple Music API. We do not store any of your personal data; all information is fetched directly from Apple's servers. Synchronized lyrics are provided by LRCLib (lrclib.net), a free and open lyrics database.",
+      "title": "About Kaset Player",
+      "message": "Kaset Player is a third-party Apple Music client built exclusively using the official Apple Music API. We do not store any of your personal data; all information is fetched directly from Apple's servers. Synchronized lyrics are provided by LRCLib (lrclib.net), a free and open lyrics database.",
       "website": "For other products, general info, and legal terms, visit adgn.me"
     },
     "supportInfo": {
@@ -230,7 +230,7 @@
   },
   "update": {
     "title": "Update Required",
-    "message": "A new version of Kaset for Apple Music is available. Please update to continue using the app with latest features and improvements.",
+    "message": "A new version of Kaset Player is available. Please update to continue using the app with latest features and improvements.",
     "newVersion": "New Version: {{version}}",
     "button": "Update Now"
   },

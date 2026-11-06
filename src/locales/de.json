@@ -9,7 +9,7 @@
     "ok": "OK",
     "unknown": "Unbekannt",
     "noItems": "Keine Elemente",
-    "appName": "Kaset for Apple Music",
+    "appName": "Kaset Player",
     "availableNow": "Jetzt verfügbar",
     "durationHm": "{{hours}} Std. {{minutes}} Min.",
     "durationH": "{{hours}} Std.",
@@ -28,8 +28,8 @@
     "close": "Schließen"
   },
   "topBar": {
-    "listenNow": "Jetzt hören",
-    "browse": "Entdecken",
+    "listenNow": "Startseite",
+    "browse": "Erkunden",
     "videos": "Videos",
     "radio": "Radio",
     "library": "Mediathek",
@@ -182,7 +182,7 @@
       "resetsIn": "⏱ Zurücksetzen in: {{remaining}}",
       "featureMusic": "∞ Unbegrenzte Musikwiedergabe",
       "featureAirPlay": "∞ Unbegrenztes AirPlay-Streaming",
-      "featuresTitle": "Kaset for Apple Music Pro holen",
+      "featuresTitle": "Kaset Player Pro holen",
       "disclaimer": "Kaset ist ein unabhängiger Apple Music-Client, keine offizielle Apple-App. Ein Upgrade auf Pro entfernt die Wiedergabe- und Streaming-Limits von Kaset und unterstützt die Entwicklung. Dieser Kauf ist unabhängig von Ihrem Apple Music-Abonnement.",
       "currentPlan": "Aktueller Plan",
       "cancelTitle": "Abo kündigen",
@@ -202,8 +202,8 @@
     "update": "Update verfügbar",
     "support": "Support",
     "aboutInfo": {
-      "title": "Über Kaset for Apple Music",
-      "message": "Kaset for Apple Music ist ein Drittanbieter-Client für Apple Music, der ausschließlich über die offizielle Apple Music API erstellt wurde. Wir speichern keine Ihrer persönlichen Daten; alle Informationen werden direkt von Apple-Servern abgerufen. Synchronisierte Liedtexte werden von LRCLib (lrclib.net), einer freien und offenen Liedtextdatenbank, bereitgestellt.",
+      "title": "Über Kaset Player",
+      "message": "Kaset Player ist ein Drittanbieter-Client für Apple Music, der ausschließlich über die offizielle Apple Music API erstellt wurde. Wir speichern keine Ihrer persönlichen Daten; alle Informationen werden direkt von Apple-Servern abgerufen. Synchronisierte Liedtexte werden von LRCLib (lrclib.net), einer freien und offenen Liedtextdatenbank, bereitgestellt.",
       "website": "Für weitere Produkte, allgemeine Informationen und rechtliche Hinweise besuchen Sie adgn.me"
     },
     "supportInfo": {
@@ -230,7 +230,7 @@
   },
   "update": {
     "title": "Update erforderlich",
-    "message": "Eine neue Version von Kaset for Apple Music ist verfügbar. Bitte aktualisieren Sie, um die App mit den neuesten Funktionen und Verbesserungen weiter nutzen zu können.",
+    "message": "Eine neue Version von Kaset Player ist verfügbar. Bitte aktualisieren Sie, um die App mit den neuesten Funktionen und Verbesserungen weiter nutzen zu können.",
     "newVersion": "Neue Version: {{version}}",
     "button": "Jetzt aktualisieren"
   },

@@ -9,7 +9,7 @@
     "ok": "Tamam",
     "unknown": "Bilinmiyor",
     "noItems": "Öğe yok",
-    "appName": "Kaset for Apple Music",
+    "appName": "Kaset Player",
     "availableNow": "Şimdi mevcut",
     "durationHm": "{{hours}}sa {{minutes}}dk",
     "durationH": "{{hours}}sa",
@@ -28,8 +28,8 @@
     "close": "Kapat"
   },
   "topBar": {
-    "listenNow": "Şimdi Dinle",
-    "browse": "Göz At",
+    "listenNow": "Ana Sayfa",
+    "browse": "Keşfet",
     "videos": "Videolar",
     "radio": "Radyo",
     "library": "Arşiv",
@@ -182,7 +182,7 @@
       "resetsIn": "⏱ Yenileme: {{remaining}}",
       "featureMusic": "∞ Sınırsız müzik dinleme",
       "featureAirPlay": "∞ Sınırsız AirPlay yayını",
-      "featuresTitle": "Kaset for Apple Music Pro'yu Edinin",
+      "featuresTitle": "Kaset Player Pro'yu Edinin",
       "disclaimer": "Kaset, resmi bir Apple uygulaması değil, bağımsız bir Apple Music istemcisidir. Pro sürüme geçmek Kaset'in dinleme ve yayın sınırlarını kaldırır ve geliştirmeyi destekler. Bu satın alım Apple Music aboneliğinizi kapsamaz.",
       "currentPlan": "Mevcut Plan",
       "cancelTitle": "Aboneliğinizi İptal Edin",
@@ -202,8 +202,8 @@
     "update": "Güncelleme Mevcut",
     "support": "Destek",
     "aboutInfo": {
-      "title": "Kaset for Apple Music Hakkında",
-      "message": "Kaset for Apple Music, yalnızca resmi Apple Music API'si kullanılarak oluşturulmuş üçüncü taraf bir Apple Music istemcisidir. Kişisel verilerinizin hiçbirini saklamıyoruz; tüm bilgiler doğrudan Apple sunucularından alınır. Senkronize şarkı sözleri, ücretsiz ve açık kaynaklı bir veritabanı olan LRCLib (lrclib.net) tarafından sağlanmaktadır.",
+      "title": "Kaset Player Hakkında",
+      "message": "Kaset Player, yalnızca resmi Apple Music API'si kullanılarak oluşturulmuş üçüncü taraf bir Apple Music istemcisidir. Kişisel verilerinizin hiçbirini saklamıyoruz; tüm bilgiler doğrudan Apple sunucularından alınır. Senkronize şarkı sözleri, ücretsiz ve açık kaynaklı bir veritabanı olan LRCLib (lrclib.net) tarafından sağlanmaktadır.",
       "website": "Diğer ürünler, genel bilgiler ve yasal metinler için adgn.me adresini ziyaret edebilirsiniz."
     },
     "supportInfo": {
@@ -230,7 +230,7 @@
   },
   "update": {
     "title": "Güncelleme Gerekli",
-    "message": "Kaset for Apple Music'in yeni bir sürümü mevcut. En son özellikler ve iyileştirmelerle uygulamayı kullanmaya devam etmek için lütfen güncelleyin.",
+    "message": "Kaset Player'ın yeni bir sürümü mevcut. En son özellikler ve iyileştirmelerle uygulamayı kullanmaya devam etmek için lütfen güncelleyin.",
     "newVersion": "Yeni Sürüm: {{version}}",
     "button": "Şimdi Güncelle"
   },

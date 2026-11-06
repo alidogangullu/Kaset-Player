@@ -543,7 +543,7 @@ export const SettingsScreen = forwardRef<SettingsScreenHandle, SettingsScreenPro
                 resizeMode="cover"
               />
             </View>
-            <Text style={styles.appNameText}>Kaset for Apple Music</Text>
+            <Text style={styles.appNameText}>Kaset Player</Text>
           </View>
 
           <ScrollView

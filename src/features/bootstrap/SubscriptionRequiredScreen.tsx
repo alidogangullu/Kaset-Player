@@ -131,7 +131,7 @@ export function SubscriptionRequiredScreen({ onSignOut }: Readonly<Props>) {
               resizeMode="cover"
             />
           </View>
-          <Text style={styles.logoTitle}>Kaset Player for Apple Music</Text>
+          <Text style={styles.logoTitle}>Kaset Player</Text>
         </View>
 
         {/* Glass card — same shape as auth screen */}

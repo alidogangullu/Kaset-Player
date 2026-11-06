@@ -3,16 +3,15 @@
  * Use theme context (useTheme()) to get colors in components.
  * See docs/THEME_AND_COLORS.md.
  *
- * Apple Music brand:
- * - Pink: #FF4E6B — PMS 184 C
- * - Red:  #FF0436 — PMS 185 C
- * - White: #FFFFFF — PMS 7436 C
+ * Kaset Player brand:
+ * - Pink accent (brandPink) and red (brandRed) for small highlights only.
+ * - Light mode: warm beige surfaces. Dark mode: near-black neutral surfaces.
  */
 
 export type AppColors = {
   // ── Brand ──────────────────────────────────────────────────────────────────
-  appleMusicPink: string;
-  appleMusicRed: string;
+  brandPink: string;
+  brandRed: string;
   accent: string;
 
   // ── Gradient background ────────────────────────────────────────────────────
@@ -130,23 +129,23 @@ export type AppColors = {
   settingsTextDisabled: string;
 
   // ── Discount / savings ────────────────────────────────────────────────────
-  /** Vivid green for discount badges — same saturation/energy as appleMusicPink. */
+  /** Vivid green for discount badges — same saturation/energy as brandPink. */
   discountGreen: string;
 };
 
 export const lightColors: AppColors = {
   // ── Brand ──────────────────────────────────────────────────────────────────
-  appleMusicPink: '#FF4E6B',
-  appleMusicRed: '#FF0436',
+  brandPink: '#FF4E6B',
+  brandRed: '#FF0436',
   accent: '#FF4E6B',
 
   // ── Gradient background ────────────────────────────────────────────────────
-  gradientStart: '#c1d5f3',
-  gradientEnd: '#bfc0c6',
+  gradientStart: '#f1e8da',
+  gradientEnd: '#d8ccb9',
 
   // ── Screen / surface backgrounds ──────────────────────────────────────────
-  screenBackground: '#FFFFFF',
-  codeScreenBackground: '#fff0f3',
+  screenBackground: '#f1e8da',
+  codeScreenBackground: '#f1e8da',
   lightGreyBg: '#f0f0f0',
   subtleBg: 'rgba(0, 0, 0, 0.05)',
 
@@ -218,8 +217,8 @@ export const lightColors: AppColors = {
   notificationBadge: '#FF3B30',
 
   // ── Now Playing (dynamic palette fallbacks) ───────────────────────────────
-  nowPlayingDarkBg: '#1a1a2e',
-  nowPlayingDarkBgDeep: '#16213e',
+  nowPlayingDarkBg: '#1a1a1a',
+  nowPlayingDarkBgDeep: '#121212',
 
   // ── Modal ───────────────────────────────────────────────────
   modalOverlay: 'rgba(0, 0, 0, 0.9)',
@@ -229,7 +228,7 @@ export const lightColors: AppColors = {
   modalInputPlaceholder: 'rgba(255, 255, 255, 0.4)',
 
   // ── Navigation bar ────────────────────────────────────────────────────────
-  navBarCardBg: '#e8e8e8',
+  navBarCardBg: '#ebe3d6',
   navBarGreyBg: 'rgba(0, 0, 0, 0.06)',
   navTabFocusedBg: '#FFFFFF',
   navTabText: '#6b7280',
@@ -249,13 +248,13 @@ export const darkColors: AppColors = {
   ...lightColors,
 
   // ── Gradient ──────────────────────────────────────────────────────────────
-  gradientStart: '#1a2035',
-  gradientEnd: '#0f1420',
+  gradientStart: '#1c1c1c',
+  gradientEnd: '#0d0d0d',
 
   // ── Screen / surface backgrounds ──────────────────────────────────────────
-  screenBackground: '#0f1420',
-  codeScreenBackground: '#f0535b',
-  lightGreyBg: '#1e2435',
+  screenBackground: '#0d0d0d',
+  codeScreenBackground: '#0d0d0d',
+  lightGreyBg: '#1e1e1e',
   subtleBg: 'rgba(255, 255, 255, 0.05)',
 
   // ── Text (light surfaces → repurposed for dark bg) ────────────────────────
@@ -270,29 +269,29 @@ export const darkColors: AppColors = {
   overlayLight: 'rgba(255, 255, 255, 0.15)',
 
   // ── Buttons ────────────────────────────────────────────────────────────────
-  buttonSecondaryBg: '#252b3a',
-  buttonFocusedBg: '#3a4155',
+  buttonSecondaryBg: '#262626',
+  buttonFocusedBg: '#3a3a3a',
 
   // ── Borders ────────────────────────────────────────────────────────────────
   borderMuted: 'rgba(255, 255, 255, 0.12)',
 
   // ── Glass morphism (dark) ─────────────────────────────────────────────────
-  glassBg: '#252b3a',
+  glassBg: '#262626',
   glassBorder: 'rgba(255, 255, 255, 0.15)',
   glassBorderSubtle: 'rgba(255, 255, 255, 0.08)',
-  glassButtonBg: '#252b3a',
-  glassCardBg: '#252b3a',
-  glassCardBgStrong: '#3a4155',
+  glassButtonBg: '#262626',
+  glassCardBg: '#262626',
+  glassCardBgStrong: '#3a3a3a',
 
   // ── Navigation bar ────────────────────────────────────────────────────────
-  navBarCardBg: '#252b3a',
-  navBarGreyBg: '#252b3a',
+  navBarCardBg: '#262626',
+  navBarGreyBg: '#262626',
   navTabFocusedBg: '#ffffff',
   navTabText: 'rgba(255, 255, 255, 0.55)',
-  navTabTextFocused: '#0f1420',
+  navTabTextFocused: '#0d0d0d',
 
   // ── Settings ──────────────────────────────────────────────────────────────
-  settingsCardBg: '#3a4155',
+  settingsCardBg: '#3a3a3a',
   settingsTextSubdued: 'rgba(255, 255, 255, 0.55)',
   settingsTextHint: 'rgba(255, 255, 255, 0.38)',
   settingsTextDisabled: 'rgba(255, 255, 255, 0.22)',

@@ -1,5 +1,5 @@
 /**
- * Gradient background — #c1d5f3 (top-left) to #bfc0c6 (bottom-right).
+ * Gradient background — theme gradientStart (top-left) to gradientEnd (bottom-right).
  * Uses react-native-linear-gradient (AGP 8 + Java 17).
  */
 

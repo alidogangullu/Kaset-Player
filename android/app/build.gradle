@@ -110,7 +110,7 @@ android {
 
     namespace "com.adg.airtune"
     defaultConfig {
-        applicationId "com.adg.airtune"
+        applicationId "com.adg.kaset"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 57

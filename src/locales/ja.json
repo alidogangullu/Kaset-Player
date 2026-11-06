@@ -9,7 +9,7 @@
     "ok": "OK",
     "unknown": "不明",
     "noItems": "アイテムがありません",
-    "appName": "Kaset for Apple Music",
+    "appName": "Kaset Player",
     "availableNow": "今すぐ利用可能",
     "durationHm": "{{hours}}時間 {{minutes}}分",
     "durationH": "{{hours}}時間",
@@ -28,8 +28,8 @@
     "close": "閉じる"
   },
   "topBar": {
-    "listenNow": "今すぐ聴く",
-    "browse": "見つける",
+    "listenNow": "ホーム",
+    "browse": "発見",
     "topPlaylists": "トッププレイリスト",
     "topAlbums": "トップアルバム",
     "videos": "ビデオ",
@@ -184,7 +184,7 @@
       "resetsIn": "⏱ リセットまで: {{remaining}}",
       "featureMusic": "∞ 音楽の無制限再生",
       "featureAirPlay": "∞ 無制限のAirPlayストリーミング",
-      "featuresTitle": "Kaset for Apple Music Proを取得",
+      "featuresTitle": "Kaset Player Proを取得",
       "disclaimer": "Kasetは独立したApple Musicクライアントであり、Appleの公式アプリではありません。Proにアップグレードすると、Kasetの再生およびストリーミング制限が解除され、開発がサポートされます。この購入はApple Musicのサブスクリプションとは別になります。",
       "currentPlan": "現在のプラン",
       "cancelTitle": "サブスクリプションをキャンセル",
@@ -204,8 +204,8 @@
     "update": "アップデートが利用可能です",
     "support": "サポート",
     "aboutInfo": {
-      "title": "Kaset for Apple Musicについて",
-      "message": "Kaset for Apple Musicは、公式のApple Music APIのみを使用して構築されたサードパーティ製のApple Musicクライアントです。お客様の個人データは一切保存されず、すべての情報はAppleのサーバーから直接取得されます。同期歌詞は、無料でオープンな歌詞データベースであるLRCLib (lrclib.net)によって提供されています。",
+      "title": "Kaset Playerについて",
+      "message": "Kaset Playerは、公式のApple Music APIのみを使用して構築されたサードパーティ製のApple Musicクライアントです。お客様の個人データは一切保存されず、すべての情報はAppleのサーバーから直接取得されます。同期歌詞は、無料でオープンな歌詞データベースであるLRCLib (lrclib.net)によって提供されています。",
       "website": "その他の製品、一般情報、法的な条件については、adgn.meをご覧ください。"
     },
     "supportInfo": {
@@ -232,7 +232,7 @@
   },
   "update": {
     "title": "アップデートが必要です",
-    "message": "新しいバージョンのKaset for Apple Musicが利用可能です。最新の機能や改善点を含んだアプリを引き続き使用するには、アップデートしてください。",
+    "message": "新しいバージョンのKaset Playerが利用可能です。最新の機能や改善点を含んだアプリを引き続き使用するには、アップデートしてください。",
     "newVersion": "新しいバージョン: {{version}}",
     "button": "今すぐアップデート"
   },
