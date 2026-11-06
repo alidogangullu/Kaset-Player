@@ -5,6 +5,7 @@ import { AnnouncementService, Announcement } from './announcementService';
 import { QuotaConfigService } from './quotaConfigService';
 import { RemoteTokenService } from './remoteTokenService';
 import { IapService } from '../settings/iapService';
+import { RedeemService } from '../settings/redeemService';
 import { ensureConfigured } from '../player/musicPlayer';
 
 export interface StartupData {
@@ -52,6 +53,9 @@ export const AppStartupService = {
     } catch (e) {
       console.warn('[AppStart] IAP initialization failed:', e);
     }
+
+    // Re-check a redeemed Pro code in the background (clears it if revoked/expired on the server).
+    RedeemService.revalidate().catch(e => console.warn('[AppStart] Redeem revalidate failed:', e));
 
     // 3. Configure Music Player if token exists
     if (hasToken && isAppleMusicSubscriber) {

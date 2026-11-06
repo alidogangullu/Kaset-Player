@@ -111,7 +111,7 @@
     "album": "Albüm"
   },
   "auth": {
-    "title": "Apple Music'e Bağlan",
+    "title": "Apple Music hesabını bağla",
     "subtitle": "Bağlanmak için QR kodunu tarayın veya URL'yi ziyaret edip aşağıdaki kodu girin",
     "scanPrompt": "QR kodunu tarayın",
     "visit": "Ziyaret Et",
@@ -127,7 +127,7 @@
     "signOut": "Token'ı temizle (oturumu kapat)",
     "appleMusicAuth": "Apple Music Kimlik Doğrulama",
     "androidTvSignIn": "Android TV – giriş API'si",
-    "connectTitle": "Apple Music'e Bağlan",
+    "connectTitle": "Apple Music hesabını bağla",
     "scanQR": "QR kodunu tarayın",
     "orVisitURL": "veya URL'yi ziyaret edin ve aşağıdaki kodu girin",
     "visitURL": "ZİYARET EDİLECEK URL",
@@ -284,5 +284,22 @@
     "errorMessage": "Bir hata oluştu. Cihazınız bu özelliği desteklemiyor olabilir.",
     "quotaTitle": "AirPlay Limiti Doldu",
     "quotaMessage": "{{used}}/{{total}} dakika AirPlay yayını kullandınız.\n\nSınır şu süre içinde sıfırlanacak: {{remaining}}."
+  },
+  "redeem": {
+    "menuItem": "Kodun mu var? Kullan",
+    "title": "Kaset Pro kodu kullan",
+    "hint": "Sana verilen kodu gir (örneğin KASET-XXXX-XXXX-XXXX). Pro, koda tanımlı tarihe kadar açık kalır.",
+    "submit": "Kullan",
+    "activeUntil": "Kaset Pro {{date}} tarihine kadar açık (kod ile).",
+    "error": {
+      "bad_request": "Kodu kontrol edip tekrar dene.",
+      "invalid": "Bu kod geçerli değil.",
+      "used": "Bu kod başka bir cihazda kullanılmış.",
+      "expired": "Bu kodun süresi dolmuş.",
+      "revoked": "Bu kod artık geçerli değil.",
+      "rate_limited": "Çok fazla deneme yapıldı. Lütfen daha sonra tekrar dene.",
+      "network": "Bağlanılamadı. İnternet bağlantını kontrol edip tekrar dene.",
+      "server_error": "Bir sorun oluştu. Lütfen daha sonra tekrar dene."
+    }
   }
 }

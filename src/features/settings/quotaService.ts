@@ -2,6 +2,7 @@ import { createMMKV } from 'react-native-mmkv';
 import i18next from 'i18next';
 import { QuotaPeriodService } from './quotaPeriodService';
 import { QuotaConfigService } from '../bootstrap/quotaConfigService';
+import { RedeemService } from './redeemService';
 
 const storage = createMMKV({ id: 'quota-storage' });
 
@@ -26,7 +27,13 @@ export class QuotaService {
 
   static readonly BONUS_PLAYS_PER_AD = DEFAULT_BONUS_PLAYS;
 
+  /** Pro via Google Play purchase or via a redeemed code that has not expired yet. */
   static isProUser(): boolean {
+    return this.hasPurchasedPro() || RedeemService.isActive();
+  }
+
+  /** Pro from a Google Play subscription or lifetime purchase only. */
+  static hasPurchasedPro(): boolean {
     return storage.getBoolean(KEYS.IS_PRO) ?? false;
   }
 

@@ -11,13 +11,6 @@ import { LOGO_BASE64 } from '../../assets/images/logoBase64';
 
 export type SettingsScreenHandle = { handleBack: () => boolean };
 
-function buildPriceMap(products: any[]): Record<string, string> {
-  const map: Record<string, string> = {};
-  for (const p of products) {
-    if (p.id && p.displayPrice) map[p.id] = p.displayPrice;
-  }
-  return map;
-}
 import { useTranslation } from 'react-i18next';
 import { changeLanguage } from '../../locales';
 import { SettingsMenuItem } from './components/SettingsMenuItem';
@@ -30,6 +23,8 @@ import { NowPlayingSettingsService } from './nowPlayingSettingsService';
 import { AirPlayQuotaService } from '../airplay/airPlayQuotaService';
 import { QuotaPeriodService } from './quotaPeriodService';
 import { IapService, SKUS } from './iapService';
+import { RedeemService } from './redeemService';
+import { RedeemCodeModal } from './components/RedeemCodeModal';
 import { spacing, radius } from '../../theme/layout';
 import { VersionCheckResult } from '../bootstrap/versionService';
 import { Announcement } from '../bootstrap/announcementService';
@@ -72,7 +67,13 @@ export const SettingsScreen = forwardRef<SettingsScreenHandle, SettingsScreenPro
   const { enabled: airPlayEnabled, setEnabled: setAirPlayEnabled } = useAirPlay();
   const userToken = useMusicUserToken();
 
+  const [showRedeem, setShowRedeem] = React.useState(false);
+  const [redeemExpiresAt, setRedeemExpiresAt] = React.useState(() =>
+    RedeemService.isActive() ? RedeemService.getExpiresAt() : undefined,
+  );
+
   const refreshSubscriptionState = React.useCallback(() => {
+    setRedeemExpiresAt(RedeemService.isActive() ? RedeemService.getExpiresAt() : undefined);
     setActiveSubSku(QuotaService.getActiveSubSku());
     setIsPro(QuotaService.isProUser());
     setNeedsCancel(QuotaService.needsCancelSubscription());
@@ -84,12 +85,14 @@ export const SettingsScreen = forwardRef<SettingsScreenHandle, SettingsScreenPro
   }, [refreshSubscriptionState]);
 
   React.useEffect(() => {
+    return RedeemService.addListener(refreshSubscriptionState);
+  }, [refreshSubscriptionState]);
+
+  React.useEffect(() => {
     if (currentSubMenu !== 'subscription') return;
     setShowCancelHint(false);
     IapService.checkSubscriptionStatus().then(refreshSubscriptionState);
-    IapService.getProducts().then(products => {
-      setPrices(buildPriceMap(products));
-    });
+    IapService.getPrices().then(setPrices);
   }, [currentSubMenu, refreshSubscriptionState]);
 
   const hasOptionalUpdate = updateInfo?.status === 'optional_update';
@@ -147,10 +150,7 @@ export const SettingsScreen = forwardRef<SettingsScreenHandle, SettingsScreenPro
         await IapService.checkSubscriptionStatus();
         refreshSubscriptionState();
 
-        const result = await IapService.subscribe(sku);
-        if (result === 'cancel_required') {
-          setShowCancelHint(true);
-        }
+        await IapService.subscribe(sku);
       } catch (err: any) {
         if (err.code !== 'E_USER_CANCELLED' && err.code !== 'user-cancelled') {
           Alert.alert(t('common.error'), t('iap.errorMessage'));
@@ -241,9 +241,17 @@ export const SettingsScreen = forwardRef<SettingsScreenHandle, SettingsScreenPro
           {isPro && (() => {
             const isLifetimeOnly = hasLifetime && !needsCancel;
             const planKey = activeSubSku === SKUS.MONTHLY ? 'settings.pro.planMonthly' : 'settings.pro.planYearly';
-            const subtitle = isLifetimeOnly
-              ? t('settings.pro.lifetimeMessage')
-              : t('settings.pro.activeMessage', { plan: t(planKey).toLowerCase() });
+            const isRedeemOnly = !QuotaService.hasPurchasedPro() && !!redeemExpiresAt;
+            let subtitle: string;
+            if (isRedeemOnly) {
+              subtitle = t('redeem.activeUntil', {
+                date: new Date(redeemExpiresAt).toLocaleDateString(i18n.language),
+              });
+            } else if (isLifetimeOnly) {
+              subtitle = t('settings.pro.lifetimeMessage');
+            } else {
+              subtitle = t('settings.pro.activeMessage', { plan: t(planKey).toLowerCase() });
+            }
             return (
               <View style={styles.proActiveCard}>
                 <Text style={styles.proActiveBadge}>✦ PRO</Text>
@@ -352,6 +360,19 @@ export const SettingsScreen = forwardRef<SettingsScreenHandle, SettingsScreenPro
               />
             </>
           )}
+
+          {!QuotaService.hasPurchasedPro() && (
+            <SettingsMenuItem
+              label={t('redeem.menuItem')}
+              onPress={() => setShowRedeem(true)}
+            />
+          )}
+
+          <RedeemCodeModal
+            visible={showRedeem}
+            onClose={() => setShowRedeem(false)}
+            onRedeemed={refreshSubscriptionState}
+          />
         </>
       </>
     );

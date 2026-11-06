@@ -111,7 +111,7 @@
     "album": "Album"
   },
   "auth": {
-    "title": "Se connecter à Apple Music",
+    "title": "Connectez votre compte Apple Music",
     "subtitle": "Scannez le code QR pour vous connecter, ou visitez l'URL et entrez le code ci-dessous",
     "scanPrompt": "Scanner le code QR",
     "visit": "Visiter",
@@ -127,7 +127,7 @@
     "signOut": "Effacer le token (déconnexion)",
     "appleMusicAuth": "Authentification Apple Music",
     "androidTvSignIn": "Android TV – API de connexion",
-    "connectTitle": "Se connecter à Apple Music",
+    "connectTitle": "Connectez votre compte Apple Music",
     "scanQR": "Scanner le code QR",
     "orVisitURL": "pour vous connecter, ou visitez l'URL et entrez le code ci-dessous",
     "visitURL": "VISITER L'URL",
@@ -284,5 +284,22 @@
     "errorMessage": "Une erreur s'est produite. Votre appareil ne prend peut-être pas en charge cette fonctionnalité.",
     "quotaTitle": "Limite AirPlay atteinte",
     "quotaMessage": "Vous avez utilisé {{used}}/{{total}} minutes de lecture AirPlay.\n\nLa limite se réinitialise dans : {{remaining}}."
+  },
+  "redeem": {
+    "menuItem": "Vous avez un code ? Utilisez-le",
+    "title": "Utiliser un code Kaset Pro",
+    "hint": "Saisissez le code reçu (par exemple KASET-XXXX-XXXX-XXXX). Pro restera actif jusqu'à la date associée au code.",
+    "submit": "Valider",
+    "activeUntil": "Kaset Pro est actif jusqu'au {{date}} (code utilisé).",
+    "error": {
+      "bad_request": "Vérifiez le code et réessayez.",
+      "invalid": "Ce code n'est pas valide.",
+      "used": "Ce code a déjà été utilisé sur un autre appareil.",
+      "expired": "Ce code a expiré.",
+      "revoked": "Ce code n'est plus valide.",
+      "rate_limited": "Trop de tentatives. Réessayez plus tard.",
+      "network": "Connexion impossible. Vérifiez votre connexion internet et réessayez.",
+      "server_error": "Une erreur s'est produite. Réessayez plus tard."
+    }
   }
 }
