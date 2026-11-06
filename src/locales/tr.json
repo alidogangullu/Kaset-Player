@@ -275,7 +275,9 @@
     "remainingLabel": "Sonraki hak: {{remaining}}",
     "limitLabel": "Kullanım: {{used}}/{{total}}",
     "notificationTitle": "Kota sınırına ulaşıldı",
-    "notificationMessage": "Dinlemeye devam etmek için Kaset Pro'ya geçebilirsiniz."
+    "notificationMessage": "Dinlemeye devam etmek için Kaset Pro'ya geçebilirsiniz.",
+    "betaTitle": "Desteğinize ihtiyacım var",
+    "betaBody": "Kaset Player yeni bir uygulamaya taşınıyor. Beta sürecine katılın! Pro üyeliğiniz varsa bu uygulamayı aynı özellikler ve Pro hesabınızla kullanmaya devam edebilirsiniz. Pro üyeliğiniz yoksa beta süresince yeni uygulamayı yüksek kotalarla kullanabilirsiniz. Katılmak için QR kodu okutun."
   },
   "airplay": {
     "warningTitle": "AirPlay Alıcısını Etkinleştir",

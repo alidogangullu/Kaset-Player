@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
+import QRCode from 'react-native-qrcode-svg';
 import { useTranslation } from 'react-i18next';
 import { radius, spacing } from '../../theme/layout';
 
@@ -22,6 +23,17 @@ type Props = Readonly<{
 
 function makeStyles() {
   return StyleSheet.create({
+    betaRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.lg,
+      marginTop: spacing.lg,
+    },
+    betaText: { flex: 1 },
+    betaTitle: { fontSize: 20, fontWeight: '700', color: '#FFFFFF', marginBottom: spacing.sm },
+    betaBody: { fontSize: 15, lineHeight: 22, color: 'rgba(255, 255, 255, 0.8)' },
+    betaUrl: { marginTop: spacing.sm, fontSize: 14, fontWeight: '600', color: '#FF4E6B' },
+    qrBox: { padding: spacing.sm, backgroundColor: '#FFFFFF', borderRadius: radius.md },
     root: {
       flex: 1,
       backgroundColor: 'rgba(0, 0, 0, 0.7)',
@@ -35,7 +47,7 @@ function makeStyles() {
     },
     card: {
       width: '100%',
-      maxWidth: 560,
+      maxWidth: 720,
       borderRadius: radius.lg,
       paddingHorizontal: spacing.lg,
       paddingVertical: spacing.md,
@@ -112,7 +124,9 @@ function makeStyles() {
   });
 }
 
-export function QuotaLimitScreen({ request, onOpenSubscription, onCancel }: Readonly<Props>): React.JSX.Element {
+const BETA_URL = 'https://www.adgn.me/kaset-player/beta';
+
+export function QuotaLimitScreen({ request, onCancel }: Readonly<Props>): React.JSX.Element {
   const { t } = useTranslation();
   const styles = useMemo(() => makeStyles(), []);
 
@@ -127,25 +141,22 @@ export function QuotaLimitScreen({ request, onOpenSubscription, onCancel }: Read
               </View>
             </View>
 
+            <View style={styles.betaRow}>
+              <View style={styles.betaText}>
+                <Text style={styles.betaTitle}>{t('quotaLimit.betaTitle')}</Text>
+                <Text style={styles.betaBody}>{t('quotaLimit.betaBody')}</Text>
+                <Text style={styles.betaUrl}>adgn.me/kaset-player/beta</Text>
+              </View>
+              <View style={styles.qrBox}>
+                <QRCode value={BETA_URL} size={140} backgroundColor="#FFFFFF" color="#000000" />
+              </View>
+            </View>
+
             <View style={styles.actionSpacer} />
 
           <View style={styles.actionRow}>
             <Pressable
               hasTVPreferredFocus={true}
-              onPress={onOpenSubscription}
-              style={({ focused }) => [
-                styles.actionButton,
-                styles.actionButtonSecondary,
-                focused && styles.actionButtonFocused,
-              ]}>
-              {() => (
-                <Text style={[styles.actionLabel, styles.actionLabelSecondary]}>
-                  {t('quotaLimit.subscription')}
-                </Text>
-              )}
-            </Pressable>
-
-            <Pressable
               onPress={onCancel}
               style={({ focused }) => [
                 styles.actionButton,

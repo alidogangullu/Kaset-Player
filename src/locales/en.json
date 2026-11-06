@@ -275,7 +275,9 @@
     "remainingLabel": "Next play: {{remaining}}",
     "limitLabel": "Usage: {{used}}/{{total}}",
     "notificationTitle": "Quota limit reached",
-    "notificationMessage": "Upgrade to Kaset Pro to continue listening."
+    "notificationMessage": "Upgrade to Kaset Pro to continue listening.",
+    "betaTitle": "We need your support",
+    "betaBody": "Kaset Player is moving to a new app. Join the beta! If you have Pro, you can keep using this app with all features and your Pro account. If you don't have Pro, you can use the new app with higher limits during the beta. Scan the QR code to join."
   },
   "airplay": {
     "warningTitle": "Enable AirPlay Receiver",

@@ -273,7 +273,9 @@
     "message": "Sie haben das kostenlose Wiedergabelimit von {{limit}} Liedern erreicht. Upgraden Sie auf Pro für unbegrenztes Hören.",
     "subscription": "Hol Dir Pro",
     "remainingLabel": "Nächste Wiedergabe: {{remaining}}",
-    "limitLabel": "Nutzung: {{used}}/{{total}}"
+    "limitLabel": "Nutzung: {{used}}/{{total}}",
+    "betaTitle": "Wir brauchen deine Unterstützung",
+    "betaBody": "Kaset Player zieht in eine neue App um. Mach bei der Beta mit! Mit Pro kannst du diese App weiterhin mit allen Funktionen und deinem Pro-Konto nutzen. Ohne Pro kannst du die neue App während der Beta mit höheren Limits nutzen. Scanne den QR-Code, um mitzumachen."
   },
   "airplay": {
     "warningTitle": "AirPlay-Empfänger aktivieren",
