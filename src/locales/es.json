@@ -277,7 +277,7 @@
     "notificationTitle": "Límite de cuota alcanzado",
     "notificationMessage": "Cámbiate a Kaset Pro para continuar escuchando.",
     "betaTitle": "Necesitamos tu apoyo",
-    "betaBody": "Tras ser retirado de Google Play, Kaset Player vuelve a la tienda. ¡Únete a la beta! Si tienes Pro, puedes seguir usando esta app con todas sus funciones y tu cuenta Pro. Si no tienes Pro, puedes usar la versión de Google Play con límites más altos durante la beta. Escanea el código QR para unirte."
+    "betaBody": "Tras ser retirado de Google Play, Kaset Player vuelve a la tienda. ¡Únete a la beta! Si tienes Pro, puedes seguir usando la app actual con todas sus funciones y tu cuenta Pro. Si no tienes Pro, puedes usar la versión de Google Play con límites más altos durante la beta. Escanea el código QR para unirte."
   },
   "airplay": {
     "warningTitle": "Activar receptor AirPlay",

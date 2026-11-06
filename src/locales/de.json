@@ -275,7 +275,7 @@
     "remainingLabel": "Nächste Wiedergabe: {{remaining}}",
     "limitLabel": "Nutzung: {{used}}/{{total}}",
     "betaTitle": "Wir brauchen deine Unterstützung",
-    "betaBody": "Nachdem Kaset Player aus Google Play entfernt wurde, kommt die App jetzt zurück in den Store. Mach bei der Beta mit! Mit Pro kannst du diese App weiterhin mit allen Funktionen und deinem Pro-Konto nutzen. Ohne Pro kannst du die Google-Play-Version während der Beta mit höheren Limits nutzen. Scanne den QR-Code, um mitzumachen."
+    "betaBody": "Nachdem Kaset Player aus Google Play entfernt wurde, kommt die App jetzt zurück in den Store. Mach bei der Beta mit! Mit Pro kannst du die bestehende App weiterhin mit allen Funktionen und deinem Pro-Konto nutzen. Ohne Pro kannst du die Google-Play-Version während der Beta mit höheren Limits nutzen. Scanne den QR-Code, um mitzumachen."
   },
   "airplay": {
     "warningTitle": "AirPlay-Empfänger aktivieren",

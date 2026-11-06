@@ -277,7 +277,7 @@
     "notificationTitle": "Quota limit reached",
     "notificationMessage": "Upgrade to Kaset Pro to continue listening.",
     "betaTitle": "We need your support",
-    "betaBody": "After being removed from Google Play, Kaset Player is coming back to the store. Join the beta! If you have Pro, you can keep using this app with all features and your Pro account. If you don't have Pro, you can use the Google Play version with higher limits during the beta. Scan the QR code to join."
+    "betaBody": "After being removed from Google Play, Kaset Player is coming back to the store. Join the beta! If you have Pro, you can keep using the existing app with all features and your Pro account. If you don't have Pro, you can use the Google Play version with higher limits during the beta. Scan the QR code to join."
   },
   "airplay": {
     "warningTitle": "Enable AirPlay Receiver",

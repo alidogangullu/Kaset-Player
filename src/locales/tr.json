@@ -277,7 +277,7 @@
     "notificationTitle": "Kota sınırına ulaşıldı",
     "notificationMessage": "Dinlemeye devam etmek için Kaset Pro'ya geçebilirsiniz.",
     "betaTitle": "Desteğinize ihtiyacım var",
-    "betaBody": "Google Play tarafından kaldırıldıktan sonra Kaset Player tekrar mağazaya giriyor. Beta sürecine katılın! Pro üyeliğiniz varsa bu uygulamayı aynı özellikler ve Pro hesabınızla kullanmaya devam edebilirsiniz. Pro üyeliğiniz yoksa beta süresince Google Play'deki sürümü yüksek kotalarla kullanabilirsiniz. Katılmak için QR kodu okutun."
+    "betaBody": "Google Play tarafından kaldırıldıktan sonra Kaset Player tekrar mağazaya giriyor. Beta sürecine katılın! Pro üyeliğiniz varsa var olan uygulamayı aynı özellikler ve Pro hesabınızla kullanmaya devam edebilirsiniz. Pro üyeliğiniz yoksa beta süresince Google Play'deki sürümü yüksek kotalarla kullanabilirsiniz. Katılmak için QR kodu okutun."
   },
   "airplay": {
     "warningTitle": "AirPlay Alıcısını Etkinleştir",
