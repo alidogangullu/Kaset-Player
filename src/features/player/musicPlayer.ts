@@ -75,7 +75,7 @@ type EventMap = {
   onPlaybackStateChanged: {state: PlaybackStateName; previousState: PlaybackStateName};
   onCurrentItemChanged: TrackInfo;
   onPlaybackProgress: ProgressInfo;
-  onPlaybackError: {message: string};
+  onPlaybackError: {message: string; rawMessage?: string; type?: number; code?: number};
   onBufferingStateChanged: {buffering: boolean};
   onPlaybackQueueChanged: {count: number};
   onShuffleModeChanged: {shuffleMode: number};

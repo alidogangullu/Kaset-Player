@@ -6,6 +6,7 @@ import android.view.WindowManager
 import android.util.Log
 import com.apple.android.music.playback.controller.MediaPlayerController
 import com.apple.android.music.playback.controller.MediaPlayerControllerFactory
+import com.apple.android.music.playback.model.ErrorConditionException
 import com.apple.android.music.playback.model.MediaContainerType
 import com.apple.android.music.playback.model.MediaItemType
 import com.apple.android.music.playback.model.MediaPlayerException
@@ -568,7 +569,10 @@ class MusicPlayerModule(private val reactContext: ReactApplicationContext) :
 
     override fun onPlaybackError(controller: MediaPlayerController, error: MediaPlayerException) {
         val msg = error.message ?: "Unknown playback error"
-        Log.e(TAG, "onPlaybackError: $msg", error)
+        // The SDK reports why Apple's servers refused an item through the exception type
+        // (e.g. TYPE_EXPLICIT_VERIFY_AGE) and the failureType code carried by its cause.
+        val errorCode = (error.cause as? ErrorConditionException)?.errorCode
+        Log.e(TAG, "onPlaybackError: type=${error.type} code=$errorCode $msg", error)
 
         var friendlyMessage = msg
         if (msg.contains("v1/me/storefront")) {
@@ -580,6 +584,8 @@ class MusicPlayerModule(private val reactContext: ReactApplicationContext) :
                 Arguments.createMap().apply {
                     putString("message", friendlyMessage)
                     putString("rawMessage", msg)
+                    putInt("type", error.type)
+                    if (errorCode != null) putInt("code", errorCode)
                 }
         sendEvent("onPlaybackError", map)
     }

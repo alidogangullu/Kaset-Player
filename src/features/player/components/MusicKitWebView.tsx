@@ -2,6 +2,7 @@ import React, { useRef, useImperativeHandle, forwardRef } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { WebView, WebViewMessageEvent } from 'react-native-webview';
 import * as musicPlayer from '../musicPlayer';
+import { ALLOW_EXPLICIT_CONTENT_JS } from '../utils/musicKitRestrictions';
 
 export interface MusicKitWebPlayerRef {
   playStation: (stationId: string) => void;
@@ -39,6 +40,7 @@ export const MusicKitWebView = forwardRef<MusicKitWebPlayerRef, Props>(
               async function attempt(retryCount) {
                 try {
                   await window.music.authorize();
+                  ${ALLOW_EXPLICIT_CONTENT_JS}
                   await window.music.setQueue({ songs: [${safeSongId}], startPlaying: true });
                 } catch(e) {
                   if (retryCount > 0) {
@@ -64,6 +66,7 @@ export const MusicKitWebView = forwardRef<MusicKitWebPlayerRef, Props>(
                   window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'error', error: 'Console Warn: Authorizing before setting queue...' }));
                   await window.music.authorize();
                   window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'error', error: 'Console Warn: Setting queue for station ID: ' + ${safeStationId} }));
+                  ${ALLOW_EXPLICIT_CONTENT_JS}
                   await window.music.setQueue({ url: "https://music.apple.com/station/" + ${safeStationId}, startPlaying: true });
                 } catch(e) {
                   if (e.message.includes('Content restricted') && retryCount > 0) {
@@ -123,7 +126,9 @@ export const MusicKitWebView = forwardRef<MusicKitWebPlayerRef, Props>(
         const safeToken = JSON.stringify(token);
         webViewRef.current?.injectJavaScript(`
           if (window.music) {
+            ${ALLOW_EXPLICIT_CONTENT_JS}
             window.music.musicUserToken = ${safeToken};
+            ${ALLOW_EXPLICIT_CONTENT_JS}
             window.music.authorize().catch(function(e){});
           }
           true;
@@ -158,9 +163,11 @@ export const MusicKitWebView = forwardRef<MusicKitWebPlayerRef, Props>(
             }
           }).then(() => {
             window.music = MusicKit.getInstance();
+            ${ALLOW_EXPLICIT_CONTENT_JS}
             var userToken = ${JSON.stringify(validUserToken)};
             if (userToken) {
               window.music.musicUserToken = userToken;
+              ${ALLOW_EXPLICIT_CONTENT_JS}
 
               // Only authorize when we already have a user token. Calling
               // authorize() without a token triggers MusicKit's interactive

@@ -169,14 +169,41 @@ android {
     }
 }
 
+// Apple's playback SDK parses "songId" as a 32-bit int, so tracks whose catalog ID exceeds
+// Integer.MAX_VALUE never start (see com/apple/android/music/playback/g/h.java). The SDK is
+// closed source, so we strip that one class from the AAR and compile our replacement instead.
+def applePlaybackAarName = 'mediaplayback-release-1.1.1.aar'
+def applePlaybackAar = file("libs/${applePlaybackAarName}")
+def appleSdkPatchedClass = 'com/apple/android/music/playback/g/h.class'
+
+def stripAppleSdkParser = tasks.register('stripAppleSdkParser', Zip) {
+    from({ zipTree(zipTree(applePlaybackAar).matching { include 'classes.jar' }.singleFile) }) {
+        exclude appleSdkPatchedClass
+    }
+    archiveFileName = 'classes.jar'
+    destinationDirectory = layout.buildDirectory.dir('patched-apple-sdk/classes')
+}
+
+def patchAppleSdkAar = tasks.register('patchAppleSdkAar', Zip) {
+    from(zipTree(applePlaybackAar)) {
+        exclude 'classes.jar'
+    }
+    from(stripAppleSdkParser)
+    archiveFileName = 'mediaplayback-release-1.1.1-patched.aar'
+    destinationDirectory = layout.buildDirectory.dir('patched-apple-sdk')
+}
+
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
 
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
 
-    // Apple MusicKit for Android — auth + playback AARs
-    implementation fileTree(dir: 'libs', include: ['*.aar'])
+    // Apple MusicKit for Android — auth + playback AARs.
+    // The playback AAR is consumed through patchAppleSdkAar (defined below), which removes
+    // the SDK's webPlayback parser so our fixed copy in src/main/java takes its place.
+    implementation fileTree(dir: 'libs', include: ['*.aar'], exclude: [applePlaybackAarName])
+    implementation files(patchAppleSdkAar)
 
     // Android Palette — extract dominant colors from artwork
     implementation("androidx.palette:palette:1.0.0")

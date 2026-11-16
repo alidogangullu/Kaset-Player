@@ -671,7 +671,7 @@ export function PlayerProvider({children}: Readonly<{children: React.ReactNode}>
         setState(s => ({...s, repeatMode: data.repeatMode}));
       }),
       musicPlayer.addEventListener('onPlaybackError', data => {
-        console.warn('[MusicPlayer] Playback error:', data.message);
+        console.warn('[MusicPlayer] Playback error:', data.message, 'type:', data.type, 'code:', data.code);
       }),
       musicPlayer.addEventListener('onItemEnded', data => {
         console.log('[MusicPlayer] Item ended:', data.title, 'endPos:', data.endPosition);
