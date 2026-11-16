@@ -113,8 +113,8 @@ android {
         applicationId "com.adg.kaset"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 59
-        versionName "3.0.1"
+        versionCode 60
+        versionName "3.0.2"
 
         def appJsonFile = rootProject.file("../app.json")
         if (appJsonFile.exists()) {

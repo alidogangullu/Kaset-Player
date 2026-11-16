@@ -1,8 +1,8 @@
 {
   "name": "Kaset",
   "displayName": "Kaset Player",
-  "version": "3.0.1",
-  "runtimeVersion": "3.0.1",
+  "version": "3.0.2",
+  "runtimeVersion": "3.0.2",
   "scheme": "airtune",
   "extra": {
     "eas": {
