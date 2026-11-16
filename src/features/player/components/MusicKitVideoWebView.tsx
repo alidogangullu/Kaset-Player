@@ -1,6 +1,7 @@
 import React, { useRef, useImperativeHandle, forwardRef, useState } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { WebView, WebViewMessageEvent } from 'react-native-webview';
+import { ALLOW_EXPLICIT_CONTENT_JS } from '../utils/musicKitRestrictions';
 
 export interface MusicKitVideoWebViewRef {
   playQueue: (ids: string[], startIndex: number) => void;
@@ -92,8 +93,10 @@ export const MusicKitVideoWebView = forwardRef<MusicKitVideoWebViewRef, Props>(
             window.music = MusicKit.getInstance();
             window.music.videoContainerElement = document.getElementById('vc');
 
+            ${ALLOW_EXPLICIT_CONTENT_JS}
             var userToken = ${JSON.stringify(validUserToken)};
             if (userToken) window.music.musicUserToken = userToken;
+            ${ALLOW_EXPLICIT_CONTENT_JS}
 
             window._videoIds = [];
             window._videoIndex = 0;
@@ -102,6 +105,7 @@ export const MusicKitVideoWebView = forwardRef<MusicKitVideoWebViewRef, Props>(
               if (!window._videoIds || window._videoIds.length === 0) return;
               var id = window._videoIds[window._videoIndex];
               try {
+                ${ALLOW_EXPLICIT_CONTENT_JS}
                 await window.music.setQueue({ musicVideo: id, startPlaying: true });
                 await window.music.play();
               } catch(e) {

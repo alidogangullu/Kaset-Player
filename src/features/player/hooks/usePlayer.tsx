@@ -200,6 +200,21 @@ function shuffleTracks<T>(array: T[]): T[] {
 
 const NATIVE_WINDOW_SIZE = 30;
 
+const NATIVE_STALL_TIMEOUT_MS = 10000;
+const NATIVE_UNSUPPORTED_ID_FALLBACK_MS = 300;
+const INT32_MAX = 2147483647;
+
+/**
+ * The bundled Apple playback SDK parses catalog song IDs as 32-bit ints, so any
+ * track whose numeric ID exceeds INT32_MAX stalls in "buffering" forever without
+ * an error. That is fixed natively in newer builds, but this build only receives
+ * JS updates, so those tracks are routed to the WebKit engine right away instead
+ * of waiting out the full stall timeout.
+ */
+function nativeCannotPlayId(trackId: string): boolean {
+  return /^\d+$/.test(trackId) && Number(trackId) > INT32_MAX;
+}
+
 /**
  * Builds the full visual queue for NowPlayingScreen.
  * - When containerTracks exists, returns full containerTracks with correct index IDs.
@@ -334,7 +349,7 @@ export function PlayerProvider({children}: Readonly<{children: React.ReactNode}>
     webPlayerRef.current?.playSong(trackId);
   }, [handleWebFallbackFailure]);
 
-  const startNativeStallTimer = useCallback((trackId: string, delayMs = 10000) => {
+  const startNativeStallTimer = useCallback((trackId: string, delayMs = NATIVE_STALL_TIMEOUT_MS) => {
     if (nativePlaybackTimeoutRef.current) clearTimeout(nativePlaybackTimeoutRef.current);
     if (AppState.currentState === 'background' || AppState.currentState === 'inactive') {
       return;
@@ -566,7 +581,10 @@ export function PlayerProvider({children}: Readonly<{children: React.ReactNode}>
         // Stall detection: if native doesn't deliver real progress within 10s, fall back to WebKit
         // Skip during quota recovery — finally handles WebKit fallback after the ad
         if (activeEngineRef.current === 'native' && data.id && !pendingQuotaRetryRef.current && !quotaRetryTrackIdRef.current) {
-          startNativeStallTimer(data.id);
+          startNativeStallTimer(
+            data.id,
+            nativeCannotPlayId(data.id) ? NATIVE_UNSUPPORTED_ID_FALLBACK_MS : NATIVE_STALL_TIMEOUT_MS,
+          );
         }
 
         const cTracks = stateRef.current.containerTracks;
